@@ -9,6 +9,9 @@ Installation instructions
 
 Just clone from Github, and create a soft link to the :file:`.vimrc` in your home directory. Update the submodules containing the repositories using::
 
+    $ git clone https://github.com/pbugnion/dotvim.git ~/.vim
+    $ ln -s ~/.vim/.vimrc
+    $ cd ~/.vim
     $ git submodule init
     $ git submodule update
 
@@ -27,6 +30,8 @@ Updating plugins
 Use::
 
     $ git submodule foreach git pull origin master
+
+This will update all the plugins.
 
 
 Plugins installed
