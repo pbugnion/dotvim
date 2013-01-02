@@ -46,3 +46,4 @@ Plugins installed
 - supertab : use tab for completion.
 - taglist : list of tags.
 - fugitive : git integration.
+- surround : handle delimiters around text snippet.
