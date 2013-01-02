@@ -11,4 +11,6 @@ set completeopt=menuone,longest,preview
 
 set incsearch
 set wildmenu
+set path=$PWD/**
+set hidden
 
