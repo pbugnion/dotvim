@@ -13,4 +13,19 @@ set incsearch
 set wildmenu
 set path=$PWD/**
 set hidden
+let mapleader = ","
+
+" Insert-mode mappings
+"
+" Map <C-u> to uppercase word under cursor.
+inoremap <C-u> <esc>viwU<esc>wa
+inoremap jk <esc>
+
+" Normal-mode mappings
+"
+" Remap ';' -> ':;
+nnoremap ; :
+" Open vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>so :source $MYVIMRC<cr>
 
