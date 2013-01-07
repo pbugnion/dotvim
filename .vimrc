@@ -22,8 +22,12 @@ inoremap jk <esc>
 
 " Normal-mode mappings
 "
-" Remap ';' -> ':;
+" Remap ';' -> ':'
 nnoremap ; :
+
+" Remap ,ww to switch window.
+nnoremap <leader>ww <c-w>w
+
 " Open vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>so :source $MYVIMRC<cr>
