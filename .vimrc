@@ -3,7 +3,6 @@ call pathogen#infect() " Use Pathogen plugin to handle runtime
 
 syntax on
 filetype plugin indent on
-colorscheme delek
 
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
@@ -29,3 +28,4 @@ nnoremap ; :
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>so :source $MYVIMRC<cr>
 
+source vim_local

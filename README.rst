@@ -16,6 +16,12 @@ Just clone from Github, and create a soft link to the :file:`.vimrc` in your hom
     $ git submodule update
 
 
+Workstation-dependent settings
+------------------------------
+
+``.vimrc`` will source a ``vim_local`` file in the ``.vim`` directory. This file is not under version control. Put all system-specific settings in there.
+
+
 Adding a new plugin
 -------------------
 
