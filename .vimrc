@@ -28,4 +28,4 @@ nnoremap ; :
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>so :source $MYVIMRC<cr>
 
-source vim_local
+source ~/.vim/vim_local
