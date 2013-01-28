@@ -1,0 +1,21 @@
+
+snippet sub
+	SUBROUTINE ${1:routine}(${2:args})
+	IMPLICIT NONE
+	${3:body}
+	END SUBROUTINE
+	
+snippet inti
+	INTEGER, INTENT(${1:in}) :: ${2:name}
+
+snippet dpi
+	REAL(dp), INTENT(${1:in}) :: ${2:name}
+
+snippet dpa
+	REAL(dp), ALLOCATABLE :: ${1:name}
+
+snippet fun
+	FUNCTION ${1:routine}(${2:args})
+	IMPLICIT NONE
+	${3:body}
+	END FUNCTION
