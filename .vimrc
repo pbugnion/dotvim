@@ -9,6 +9,7 @@ filetype plugin indent on
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
+let g:SuperTabClosePreviewOnPopupClose = 1
 
 set incsearch
 set wildmenu
