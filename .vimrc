@@ -2,6 +2,7 @@
 call pathogen#infect() " Use Pathogen plugin to handle runtime
 
 au BufRead,BufNewFile *.txt setlocal ft=txt
+au BufRead,BufNewFile *.md setlocal ft=md
 
 syntax on
 filetype plugin indent on
