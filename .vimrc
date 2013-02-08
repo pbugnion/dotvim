@@ -34,4 +34,15 @@ nnoremap <leader>ww <c-w>w
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>so :source $MYVIMRC<cr>
 
+" Toggle taglist
+nnoremap <leader>tt :TlistToggle<cr>
+
+" git mappings
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>dp :diffput<cr>
+
+" Visual mode mappings
+vnoremap <leader>dp :diffput<cr>
+
 source ~/.vim/vim_local
