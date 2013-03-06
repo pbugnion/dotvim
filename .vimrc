@@ -15,6 +15,7 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 let g:SuperTabClosePreviewOnPopupClose = 1
+let g:EasyMotion_leader_key = '<Leader>'
 
 set incsearch
 set wildmenu
