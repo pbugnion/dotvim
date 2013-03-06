@@ -3,6 +3,7 @@ call pathogen#infect() " Use Pathogen plugin to handle runtime
 
 au BufRead,BufNewFile *.txt setlocal ft=txt
 au BufRead,BufNewFile *.md setlocal ft=md
+au BufNewFile test*.py read ~/.vim/templates/python_unittest.py
 
 set tabstop=4
 set shiftwidth=4
