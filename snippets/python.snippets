@@ -4,9 +4,5 @@ snippet doc
 	${1:Docstring}
 	"""
 
-snippet test
-	def test_${1:test_name}():
-		with tester("$1"):
-
-snippet ld
-	lambda ${1:vars} : ${2:body}
+snippet suit
+	${1:name} = unittest.TestLoader().loadTestsFromTestCase(${2:_class})
