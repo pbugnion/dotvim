@@ -1,10 +1,17 @@
 
 call pathogen#infect() " Use Pathogen plugin to handle runtime
 
-au BufRead,BufNewFile *.txt setlocal ft=txt
-au BufRead,BufNewFile *.md setlocal ft=md
-au BufNewFile test*.py read ~/.vim/templates/python_unittest.py
-au BufNewFile *.tex read ~/.vim/templates/latex.tex
+augroup fts
+    au!
+    au BufRead,BufNewFile *.txt setlocal ft=txt
+    au BufRead,BufNewFile *.md setlocal ft=md
+augroup END
+
+augroup templates
+    au!
+    au BufNewFile test*.py read ~/.vim/templates/python_unittest.py
+    au BufNewFile *.tex read ~/.vim/templates/latex.tex
+augroup END
 
 set tabstop=4
 set shiftwidth=4
@@ -13,19 +20,21 @@ set expandtab
 filetype plugin indent on
 syntax on
 
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
-let g:SuperTabClosePreviewOnPopupClose = 1
-let g:EasyMotion_leader_key = '<Leader>'
-" let g:VimuxOrientation = "v"
-" let g:VimuxUseNearestPane = 1
+augroup plugins
+    au!
+    au FileType python set omnifunc=pythoncomplete#Complete
+    let g:SuperTabDefaultCompletionType = "context"
+    set completeopt=menuone,longest,preview
+    let g:SuperTabClosePreviewOnPopupClose = 1
+    let g:EasyMotion_leader_key = '<Leader>'
+augroup END 
 
 set incsearch
 set wildmenu
 set path=$PWD/**
 set hidden
-let mapleader = ","
+let mapleader = " "
+set linebreak
 
 " Insert-mode mappings
 "
@@ -37,9 +46,24 @@ inoremap jk <esc>
 "
 " Remap ';' -> ':'
 nnoremap ; :
+vnoremap ; :
+
+" And remap ';' -> ','
+nnoremap , ;
+
+" Remap H -> ^ and L -> $
+nnoremap H ^
+nnoremap L $
+
+" Show trailing whitespace
+nnoremap <leader>ss :match Error /\m \+$/<cr>
+nnoremap <leader>sc :match none<cr>
 
 " Remap ,ww to switch window.
 nnoremap <leader>ww <c-w>w
+
+" Easy tag search
+nnoremap <leader>ta :ta /
 
 " Open vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -57,3 +81,5 @@ nnoremap <leader>dp :diffput<cr>
 vnoremap <leader>dp :diffput<cr>
 
 source ~/.vim/vim_local
+
+

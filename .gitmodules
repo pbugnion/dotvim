@@ -34,3 +34,9 @@
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
