@@ -26,21 +26,26 @@ vnoremap <buffer> [M ?END<space>SUBROUTINE<cr>
 
 " Abbreviations
 
-iabbrev <buffer> imp IMPLICIT NONE
-iabbrev <buffer> true .true.
-iabbrev <buffer> false .false.
+iabbrev <buffer> imp; IMPLICIT NONE
+iabbrev <buffer> t; .true.
+iabbrev <buffer> f; .false.
 
-iabbrev <buffer> int INTEGER
-iabbrev <buffer> intin INTEGER,INTENT(in)
-iabbrev <buffer> intinout INTEGER,INTENT(inout)
-iabbrev <buffer> intout INTEGER,INTENT(out)
+iabbrev <buffer> int; INTEGER
+iabbrev <buffer> intin; INTEGER,INTENT(in)
+iabbrev <buffer> intinout; INTEGER,INTENT(inout)
+iabbrev <buffer> intout; INTEGER,INTENT(out)
 
-iabbrev <buffer> dp REAL(dp)
-iabbrev <buffer> dpin REAL(dp),INTENT(in)
-iabbrev <buffer> dpinout REAL(dp),INTENT(inout)
-iabbrev <buffer> dpout REAL(dp),INTENT(out)
+iabbrev <buffer> dp; REAL(dp)
+iabbrev <buffer> dpin; REAL(dp),INTENT(in)
+iabbrev <buffer> dpinout; REAL(dp),INTENT(inout)
+iabbrev <buffer> dpout; REAL(dp),INTENT(out)
 
-iabbrev <buffer> log LOGICAL
-iabbrev <buffer> login LOGICAL,INTENT(in)
-iabbrev <buffer> loginout LOGICAL,INTENT(inout)
-iabbrev <buffer> logout LOGICAL,INTENT(out)
+iabbrev <buffer> cdp; COMPLEX(dp)
+iabbrev <buffer> cdpin; COMPLEX(dp),INTENT(in)
+iabbrev <buffer> cdpinout; COMPLEX(dp),INTENT(inout)
+iabbrev <buffer> cdpout; COMPLEX(dp),INTENT(out)
+
+iabbrev <buffer> log; LOGICAL
+iabbrev <buffer> login; LOGICAL,INTENT(in)
+iabbrev <buffer> loginout; LOGICAL,INTENT(inout)
+iabbrev <buffer> logout; LOGICAL,INTENT(out)

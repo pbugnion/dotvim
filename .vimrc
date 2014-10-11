@@ -5,6 +5,7 @@ augroup fts
     au!
     au BufRead,BufNewFile *.txt setlocal ft=txt
     au BufRead,BufNewFile *.md setlocal ft=md
+    au BufRead,BufNewFile *.thor setlocal ft=ruby
 augroup END
 
 augroup templates
@@ -27,6 +28,9 @@ augroup plugins
     set completeopt=menuone,longest,preview
     let g:SuperTabClosePreviewOnPopupClose = 1
     let g:EasyMotion_leader_key = '<Leader>'
+    let g:LatexBox_Folding = 1
+    let g:LatexBox_fold_envs = 0
+    let g:LatexBox_fold_sections = ["section","subsection"]
 augroup END 
 
 set incsearch
@@ -54,6 +58,9 @@ nnoremap , ;
 " Remap H -> ^ and L -> $
 nnoremap H ^
 nnoremap L $
+
+" Remap mm to make
+nnoremap <leader>mm :make<cr>
 
 " Show trailing whitespace
 nnoremap <leader>ss :match Error /\m \+$/<cr>
