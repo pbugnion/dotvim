@@ -4,7 +4,7 @@ call pathogen#infect() " Use Pathogen plugin to handle runtime
 augroup fts
     au!
     au BufRead,BufNewFile *.txt setlocal ft=txt
-    au BufRead,BufNewFile *.md setlocal ft=md
+    au BufRead,BufNewFile *.md setlocal ft=markdown
     au BufRead,BufNewFile *.thor setlocal ft=ruby
 augroup END
 
