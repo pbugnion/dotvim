@@ -38,5 +38,5 @@
 	path = bundle/julia-vim
 	url = https://github.com/JuliaLang/julia-vim.git
 [submodule "vim-scala"]
-	path = vim-scala
+	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
