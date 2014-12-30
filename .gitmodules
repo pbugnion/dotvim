@@ -19,9 +19,6 @@
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
-[submodule "bundle/ropevim"]
-	path = bundle/ropevim
-	url = https://github.com/sontek/rope-vim.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
@@ -37,6 +34,9 @@
 [submodule "bundle/vimux"]
 	path = bundle/vimux
 	url = https://github.com/benmills/vimux.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/julia-vim"]
+	path = bundle/julia-vim
+	url = https://github.com/JuliaLang/julia-vim.git
+[submodule "vim-scala"]
+	path = vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
