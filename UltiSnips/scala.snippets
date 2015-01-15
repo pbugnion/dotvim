@@ -1,0 +1,44 @@
+
+snippet scalatest
+import org.scalatest.{FlatSpec,Matchers}
+
+import $1
+
+class `!p snip.rv = snip.basename` extends FlatSpec with Matchers {
+	$0
+}
+endsnippet
+
+snippet should
+${1:it} should "${2}" in {
+	$0
+}
+endsnippet
+
+snippet se
+should equal($1)
+endsnippet
+
+snippet enum
+object $1 extends Enumeration {
+	val $2 = Value("$3")
+}
+endsnippet
+
+snippet class
+class $1 {
+	$0
+}
+endsnippet
+
+snippet object
+object $1 {
+	$0
+}
+endsnippet
+
+snippet def
+def $1($2):$3 = {
+	$0
+}
+endsnippet
