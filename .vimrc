@@ -28,9 +28,9 @@ augroup plugins
     set completeopt=menuone,longest,preview
     let g:SuperTabClosePreviewOnPopupClose = 1
     let g:EasyMotion_leader_key = '<Leader>'
-    let g:LatexBox_Folding = 1
-    let g:LatexBox_fold_envs = 0
-    let g:LatexBox_fold_sections = ["section","subsection"]
+    let g:UltiSnipsExpandTrigger = "<tab>"
+    let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 augroup END 
 
 set incsearch
@@ -83,6 +83,9 @@ nnoremap <leader>tt :TlistToggle<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>dp :diffput<cr>
+
+" Switch working directory
+nnoremap <leader>cd :lcd %:p:h<cr>
 
 " Visual mode mappings
 vnoremap <leader>dp :diffput<cr>
